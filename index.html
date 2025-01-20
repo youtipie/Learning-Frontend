@@ -3,54 +3,60 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Test 1</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Портфоліо</title>
 </head>
 
 <body>
+<nav>
+    <h1>Моє портфоліо</h1>
+    <a href="#projects">Проекти</a>
+    <a href="#contacts">Контакти</a>
+</nav>
 
-<ol style="">
-    <li>
-        <div>
-            <a href="#" style="color: inherit; text-decoration: none; display: flex">
-                <img
-                        src="https://www.orbitbooks.net/wp-content/uploads/2022/06/Sapkowski_BloodofElves-HC-scaled.jpg"
-                        alt="book1 image"
-                        width="164"
-                        height="256"
-                        style="margin-right: 10px;  object-fit: cover"
-                >
-                <div>
-                    <h2>The Witcher: Blood of Elves</h2>
-                    <p>Andrzej Sapkowski</p>
-                    <form>
-                        <input type="text" placeholder="Enter your comment">
-                    </form>
+<section class="content">
+    <h2 id="projects">Мої проекти</h2>
+    <div>
+        <div class="project-card">
+            <a href="https://github.com/youtipie/Snake-evolution" target="_blank">
+                <img src="img/project1.png" alt="project 1" class="project-img">
+                <div class="project-body">
+                    <h3>Snake Evolution</h3>
+                    <p>
+                        Snake Evolution - це проєкт, що використовує генетичний алгоритм для навчання змієподібних
+                        агентів, керованих нейронною мережею, грати в класичну гру Snake. Прийняття рішень кожної змії
+                        визначається нейронною мережею, а її успішність оцінюється на основі продуктивності в грі, часу
+                        виживання та інших факторів. Генетичний алгоритм використовує такі техніки, як одноточкове та
+                        рівномірне схрещування для створення нащадків, а також мутацію для забезпечення різноманітності.
+                        З кожним поколінням популяція еволюціонує, покращуючи свої стратегії гри. У проєкті також
+                        реалізовано можливості збереження та завантаження популяцій, що дозволяє продовжувати навчання
+                        та експерименти.</p>
                 </div>
             </a>
         </div>
-    </li>
-    <li>
-        <div>
-            <a href="#" style="color: inherit; text-decoration: none; display: flex">
-                <img
-                        src="https://i0.wp.com/joeabercrombie.com/wp-content/uploads/2014/03/uk-orig-best-served-cold.jpg?resize=423%2C650&ssl=1"
-                        alt="book1 image"
-                        width="164"
-                        height="256"
-                        style="margin-right: 10px;  object-fit: cover"
-                >
-                <div>
-                    <h2>Best served cold</h2>
-                    <p>Joe Abercrombie</p>
-                    <form>
-                        <input type="text" placeholder="Enter your comment">
-                    </form>
+
+        <div class="project-card">
+            <a href="https://github.com/youtipie/LinguaLib" target="_blank">
+                <img src="img/project2.png" alt="project 2" class="project-img">
+                <div class="project-body">
+                    <h3>LinguaLib</h3>
+                    <p>
+                        LinguaLib - це проєкт, що написаний за допомогою фреймворку React Native. Його основна ціль -
+                        надати користувачу можливість читати та перекладати книжки у реальному часі. Додаток має
+                        підтримку найпопулярнішого формату книг - Epub. LinguaLib зберігає усі переклади локально на
+                        девайсі, отже користувачеві не потрібно перекладати текст, що він уже переклав раніше. Також
+                        реалізовано локалізацію та інтернаціоналізацію додатку та інтерфейс перекладено на українську
+                        та англійську мови. Сам двигун для перекладу підтримує майже усі мови світу!.</p>
                 </div>
             </a>
         </div>
-    </li>
-</ol>
+    </div>
+</section>
 
+<footer id="contacts">
+    <h2>Зв'яжіться зі мною</h2>
+    <p>Email: <a href="mailto:youtipie@gmail.com">youtipie@gmail.com</a></p>
+    <p>Телефон <a href="tel:+123456789">+123456789</a></p>
+</footer>
 </body>
-
 </html>
